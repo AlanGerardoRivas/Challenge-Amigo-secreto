@@ -30,7 +30,7 @@ function mostrarLista() {
 
 function sortearAmigo() {
   if (amigos.length === 0) {
-    alert("No hay participantes para sortear.");
+    document.getElementById("resultado").textContent = "No hay participantes para sortear.";
     return;
   }
 
@@ -39,8 +39,9 @@ function sortearAmigo() {
   const ganador = amigos[indice];
 
   // Mostrar resultado
-  alert("El amigo secreto es: " + ganador);
+ document.getElementById("resultado").textContent = "El amigo secreto es: " + ganador;
 
 }
+
 
 
